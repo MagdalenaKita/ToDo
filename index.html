@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="./todo.js" type="module" defer></script>
 </head>
+
 <body>
-    Moja pierwsza strona www
+    <header>
+        <h1>ToDo - List</h1>
+    </header>
+    <main>
+
+        <div class="todoContainer">
+            <!-- <label for="taskContent">Treść zadania:</label>
+            <input class="input" type="text" id="taskContent" name="taskContent"> -->
+            <label>Treść zadania:
+                <input class="input" type="text" id="taskContent" name="taskContent">
+            </label>
+
+            <button class="button" onclick="addTask()">Dodaj</button>
+        </div>
+
+        <div class="list">
+            <ul class="list-group" id="taskList"></ul>
+        </div>
+    </main>
+   
 </body>
+
 </html>

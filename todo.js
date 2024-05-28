@@ -183,9 +183,3 @@ function handleDrop(event) {
     saveToLocalStorage();    
 
 }
-  
-
-
-// zaznacz wszystkie zadania - funkcje
-// grupować taski - przeciąganie tasków między grupami
-// git

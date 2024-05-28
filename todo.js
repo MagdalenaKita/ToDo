@@ -164,7 +164,6 @@ function handleDragStart(event) {
 
 function handleDragOver(event) {
     event.preventDefault();
-    // event.dataTransfer.dropEffect = 'move';
 }
 
 function handleDrop(event) {

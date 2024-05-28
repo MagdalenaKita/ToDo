@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <h1>ToDo - List</h1>
+    <div class="todoContainer">
+        <form id="todoForm">
+            <label>Treść zadania:
+                <input class="input" type="text" id="todoInput" name="todoInput" placeholder="Wpisz treść zadania...">
+            </label>
+            <div class="selectGroup">
+                <label for="groups">Wybierz ważność zadania:</label>
+                <select id="groups" name="groups">
+                    <option value="important">Ważne</option>
+                    <option value="neutral">Pozostałe</option>
+                </select>
+            </div>
+            <button type="submit" class="button">Dodaj</button>
+        </form>
+    </div>
+    <div class="list">
+        <div class="checkboxContainer">
+            <input type="checkbox" id="checkAll" name="checkAll" />
+            <label for="checkAll">Zaznacz wszystkie</label>
+        </div>
+        <h3>Ważne</h3>
+        <ul class="list-group" id="todoListImportant"></ul>
+        <h3>Pozostałe</h3>
+        <ul class="list-group" id="todoListNeutral"></ul>
+    </div>
+    <script src="todo.js"></script>
+</body>
+
+</html>
